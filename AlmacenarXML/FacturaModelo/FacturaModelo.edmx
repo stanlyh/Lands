@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TALLERERP_A01_DATOSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TALLERERP_A01_DATOS.imp.sdm_v_fac_cab' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="sdm_v_fac_cab">
+          <Key>
+            <PropertyRef Name="preClaveAcceso" />
+            <PropertyRef Name="codDoc" />
+            <PropertyRef Name="obligadoContabilidad" />
+            <PropertyRef Name="unidadTiempo" />
+            <PropertyRef Name="infoAdicionalNombre1" />
+            <PropertyRef Name="infoAdicionalNombre2" />
+            <PropertyRef Name="infoAdicionalNombre3" />
+            <PropertyRef Name="infoAdicionalNombre4" />
+            <PropertyRef Name="infoAdicionalNombre5" />
+            <PropertyRef Name="infoAdicionalNombre6" />
+            <PropertyRef Name="infoAdicionalNombre7" />
+            <PropertyRef Name="infoAdicionalNombre8" />
+            <PropertyRef Name="infoAdicionalNombre9" />
+            <PropertyRef Name="infoAdicionalNombre10" />
+            <PropertyRef Name="infoAdicionalNombre11" />
+            <PropertyRef Name="infoAdicionalNombre12" />
+            <PropertyRef Name="xnumdoc_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xciclo_id" />
+          </Key>
+          <Property Name="razonSocial" Type="varchar" MaxLength="200" />
+          <Property Name="nombreComercial" Type="varchar" MaxLength="200" />
+          <Property Name="ruc" Type="varchar" MaxLength="20" />
+          <Property Name="preClaveAcceso" Type="nvarchar" MaxLength="4000" Nullable="false" />
+          <Property Name="codDoc" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="estab" Type="varchar" MaxLength="6" />
+          <Property Name="ptoEmi" Type="varchar" MaxLength="6" />
+          <Property Name="secuencial" Type="varchar" MaxLength="9" />
+          <Property Name="dirMatriz" Type="varchar" MaxLength="250" />
+          <Property Name="fechaEmision" Type="char" MaxLength="10" />
+          <Property Name="dirEstablecimiento" Type="varchar" MaxLength="250" />
+          <Property Name="contribuyenteEspecial" Type="varchar" MaxLength="3" />
+          <Property Name="obligadoContabilidad" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="tipoIdentificacionComprador" Type="varchar" MaxLength="2" />
+          <Property Name="guiaRemision" Type="varchar" MaxLength="20" />
+          <Property Name="razonSocialComprador" Type="varchar" MaxLength="90" />
+          <Property Name="identificacionComprador" Type="varchar" MaxLength="20" />
+          <Property Name="direccionComprador" Type="varchar" MaxLength="8000" />
+          <Property Name="totalSinImpuestos" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="totalDescuento" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="propina" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="importeTotal" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="moneda" Type="char" MaxLength="3" />
+          <Property Name="formaPago" Type="varchar" MaxLength="2" />
+          <Property Name="total" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="plazo" Type="smallint" />
+          <Property Name="unidadTiempo" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="valorRetIva" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="valorRetRenta" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="infoAdicionalNombre1" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor1" Type="varchar" MaxLength="8000" />
+          <Property Name="infoAdicionalNombre2" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="infoAdicionalValor2" Type="varchar" MaxLength="40" />
+          <Property Name="infoAdicionalNombre3" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="infoAdicionalValor3" Type="varchar" MaxLength="80" />
+          <Property Name="infoAdicionalNombre4" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="infoAdicionalValor4" Type="varchar" MaxLength="20" />
+          <Property Name="infoAdicionalNombre5" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="infoAdicionalValor5" Type="varchar" MaxLength="250" />
+          <Property Name="infoAdicionalNombre6" Type="varchar" MaxLength="16" Nullable="false" />
+          <Property Name="infoAdicionalValor6" Type="varchar" MaxLength="20" />
+          <Property Name="infoAdicionalNombre7" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="infoAdicionalValor7" Type="int" />
+          <Property Name="infoAdicionalNombre8" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor8" Type="int" />
+          <Property Name="infoAdicionalNombre9" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor9" Type="int" />
+          <Property Name="infoAdicionalNombre10" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor10" Type="int" />
+          <Property Name="infoAdicionalNombre11" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor11" Type="int" />
+          <Property Name="infoAdicionalNombre12" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="infoAdicionalValor12" Type="int" />
+          <Property Name="xnumdoc_id" Type="int" Nullable="false" />
+          <Property Name="xtipodoc_id" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="xseccion_id" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="xempresa_id" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="xciclo_id" Type="smallint" Nullable="false" />
+          <Property Name="Estado" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TALLERERP_A01_DATOS.imp.sdm_v_fac_iv' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="sdm_v_fac_iv">
+          <Key>
+            <PropertyRef Name="codigo" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xciclo_id" />
+            <PropertyRef Name="xnumdoc_id" />
+          </Key>
+          <Property Name="baseImponible" Type="decimal" Precision="38" Scale="4" />
+          <Property Name="valor" Type="decimal" Precision="38" Scale="4" />
+          <Property Name="codigo" Type="int" Nullable="false" />
+          <Property Name="codigoPorcentaje" Type="int" />
+          <Property Name="tarifa" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="descuentoAdicional" Type="int" />
+          <Property Name="xempresa_id" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="xseccion_id" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="xtipodoc_id" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="xciclo_id" Type="smallint" Nullable="false" />
+          <Property Name="xnumdoc_id" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'TALLERERP_A01_DATOS.imp.sdm_v_fac_lin' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="sdm_v_fac_lin">
+          <Key>
+            <PropertyRef Name="detAdicionalNombre1" />
+            <PropertyRef Name="detAdicionalNombre2" />
+            <PropertyRef Name="detAdicionalNombre3" />
+            <PropertyRef Name="xnumdoc_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xciclo_id" />
+          </Key>
+          <Property Name="codigoPrincipal" Type="varchar" MaxLength="25" />
+          <Property Name="codigoAuxiliar" Type="varchar" MaxLength="14" />
+          <Property Name="descripcion" Type="varchar" MaxLength="200" />
+          <Property Name="cantidad" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="precioUnitario" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="descuento" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="precioTotalSinImpuesto" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="codigo" Type="int" />
+          <Property Name="codigoPorcentaje" Type="int" />
+          <Property Name="tarifa" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="baseImponible" Type="decimal" Precision="19" Scale="4" />
+          <Property Name="valor" Type="decimal" Precision="10" Scale="4" />
+          <Property Name="detAdicionalNombre1" Type="varchar" MaxLength="8" Nullable="false" />
+          <Property Name="detAdicionalValor1" Type="varchar" MaxLength="30" />
+          <Property Name="detAdicionalNombre2" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="detAdicionalValor2" Type="varchar" MaxLength="12" />
+          <Property Name="detAdicionalNombre3" Type="varchar" MaxLength="6" Nullable="false" />
+          <Property Name="detAdicionalValor3" Type="varchar" MaxLength="5" />
+          <Property Name="xnumdoc_id" Type="int" Nullable="false" />
+          <Property Name="xtipodoc_id" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="xseccion_id" Type="varchar" MaxLength="2" Nullable="false" />
+          <Property Name="xempresa_id" Type="varchar" MaxLength="4" Nullable="false" />
+          <Property Name="xciclo_id" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="TALLERERP_A01_DATOSModelStoreContainer">
+          <EntitySet Name="sdm_v_fac_cab" EntityType="Self.sdm_v_fac_cab" store:Type="Views" store:Schema="imp">
+            <DefiningQuery>SELECT 
+    [sdm_v_fac_cab].[razonSocial] AS [razonSocial], 
+    [sdm_v_fac_cab].[nombreComercial] AS [nombreComercial], 
+    [sdm_v_fac_cab].[ruc] AS [ruc], 
+    [sdm_v_fac_cab].[preClaveAcceso] AS [preClaveAcceso], 
+    [sdm_v_fac_cab].[codDoc] AS [codDoc], 
+    [sdm_v_fac_cab].[estab] AS [estab], 
+    [sdm_v_fac_cab].[ptoEmi] AS [ptoEmi], 
+    [sdm_v_fac_cab].[secuencial] AS [secuencial], 
+    [sdm_v_fac_cab].[dirMatriz] AS [dirMatriz], 
+    [sdm_v_fac_cab].[fechaEmision] AS [fechaEmision], 
+    [sdm_v_fac_cab].[dirEstablecimiento] AS [dirEstablecimiento], 
+    [sdm_v_fac_cab].[contribuyenteEspecial] AS [contribuyenteEspecial], 
+    [sdm_v_fac_cab].[obligadoContabilidad] AS [obligadoContabilidad], 
+    [sdm_v_fac_cab].[tipoIdentificacionComprador] AS [tipoIdentificacionComprador], 
+    [sdm_v_fac_cab].[guiaRemision] AS [guiaRemision], 
+    [sdm_v_fac_cab].[razonSocialComprador] AS [razonSocialComprador], 
+    [sdm_v_fac_cab].[identificacionComprador] AS [identificacionComprador], 
+    [sdm_v_fac_cab].[direccionComprador] AS [direccionComprador], 
+    [sdm_v_fac_cab].[totalSinImpuestos] AS [totalSinImpuestos], 
+    [sdm_v_fac_cab].[totalDescuento] AS [totalDescuento], 
+    [sdm_v_fac_cab].[propina] AS [propina], 
+    [sdm_v_fac_cab].[importeTotal] AS [importeTotal], 
+    [sdm_v_fac_cab].[moneda] AS [moneda], 
+    [sdm_v_fac_cab].[formaPago] AS [formaPago], 
+    [sdm_v_fac_cab].[total] AS [total], 
+    [sdm_v_fac_cab].[plazo] AS [plazo], 
+    [sdm_v_fac_cab].[unidadTiempo] AS [unidadTiempo], 
+    [sdm_v_fac_cab].[valorRetIva] AS [valorRetIva], 
+    [sdm_v_fac_cab].[valorRetRenta] AS [valorRetRenta], 
+    [sdm_v_fac_cab].[infoAdicionalNombre1] AS [infoAdicionalNombre1], 
+    [sdm_v_fac_cab].[infoAdicionalValor1] AS [infoAdicionalValor1], 
+    [sdm_v_fac_cab].[infoAdicionalNombre2] AS [infoAdicionalNombre2], 
+    [sdm_v_fac_cab].[infoAdicionalValor2] AS [infoAdicionalValor2], 
+    [sdm_v_fac_cab].[infoAdicionalNombre3] AS [infoAdicionalNombre3], 
+    [sdm_v_fac_cab].[infoAdicionalValor3] AS [infoAdicionalValor3], 
+    [sdm_v_fac_cab].[infoAdicionalNombre4] AS [infoAdicionalNombre4], 
+    [sdm_v_fac_cab].[infoAdicionalValor4] AS [infoAdicionalValor4], 
+    [sdm_v_fac_cab].[infoAdicionalNombre5] AS [infoAdicionalNombre5], 
+    [sdm_v_fac_cab].[infoAdicionalValor5] AS [infoAdicionalValor5], 
+    [sdm_v_fac_cab].[infoAdicionalNombre6] AS [infoAdicionalNombre6], 
+    [sdm_v_fac_cab].[infoAdicionalValor6] AS [infoAdicionalValor6], 
+    [sdm_v_fac_cab].[infoAdicionalNombre7] AS [infoAdicionalNombre7], 
+    [sdm_v_fac_cab].[infoAdicionalValor7] AS [infoAdicionalValor7], 
+    [sdm_v_fac_cab].[infoAdicionalNombre8] AS [infoAdicionalNombre8], 
+    [sdm_v_fac_cab].[infoAdicionalValor8] AS [infoAdicionalValor8], 
+    [sdm_v_fac_cab].[infoAdicionalNombre9] AS [infoAdicionalNombre9], 
+    [sdm_v_fac_cab].[infoAdicionalValor9] AS [infoAdicionalValor9], 
+    [sdm_v_fac_cab].[infoAdicionalNombre10] AS [infoAdicionalNombre10], 
+    [sdm_v_fac_cab].[infoAdicionalValor10] AS [infoAdicionalValor10], 
+    [sdm_v_fac_cab].[infoAdicionalNombre11] AS [infoAdicionalNombre11], 
+    [sdm_v_fac_cab].[infoAdicionalValor11] AS [infoAdicionalValor11], 
+    [sdm_v_fac_cab].[infoAdicionalNombre12] AS [infoAdicionalNombre12], 
+    [sdm_v_fac_cab].[infoAdicionalValor12] AS [infoAdicionalValor12], 
+    [sdm_v_fac_cab].[xnumdoc_id] AS [xnumdoc_id], 
+    [sdm_v_fac_cab].[xtipodoc_id] AS [xtipodoc_id], 
+    [sdm_v_fac_cab].[xseccion_id] AS [xseccion_id], 
+    [sdm_v_fac_cab].[xempresa_id] AS [xempresa_id], 
+    [sdm_v_fac_cab].[xciclo_id] AS [xciclo_id], 
+    [sdm_v_fac_cab].[Estado] AS [Estado]
+    FROM [imp].[sdm_v_fac_cab] AS [sdm_v_fac_cab]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sdm_v_fac_iv" EntityType="Self.sdm_v_fac_iv" store:Type="Views" store:Schema="imp">
+            <DefiningQuery>SELECT 
+    [sdm_v_fac_iv].[baseImponible] AS [baseImponible], 
+    [sdm_v_fac_iv].[valor] AS [valor], 
+    [sdm_v_fac_iv].[codigo] AS [codigo], 
+    [sdm_v_fac_iv].[codigoPorcentaje] AS [codigoPorcentaje], 
+    [sdm_v_fac_iv].[tarifa] AS [tarifa], 
+    [sdm_v_fac_iv].[descuentoAdicional] AS [descuentoAdicional], 
+    [sdm_v_fac_iv].[xempresa_id] AS [xempresa_id], 
+    [sdm_v_fac_iv].[xseccion_id] AS [xseccion_id], 
+    [sdm_v_fac_iv].[xtipodoc_id] AS [xtipodoc_id], 
+    [sdm_v_fac_iv].[xciclo_id] AS [xciclo_id], 
+    [sdm_v_fac_iv].[xnumdoc_id] AS [xnumdoc_id]
+    FROM [imp].[sdm_v_fac_iv] AS [sdm_v_fac_iv]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="sdm_v_fac_lin" EntityType="Self.sdm_v_fac_lin" store:Type="Views" store:Schema="imp">
+            <DefiningQuery>SELECT 
+    [sdm_v_fac_lin].[codigoPrincipal] AS [codigoPrincipal], 
+    [sdm_v_fac_lin].[codigoAuxiliar] AS [codigoAuxiliar], 
+    [sdm_v_fac_lin].[descripcion] AS [descripcion], 
+    [sdm_v_fac_lin].[cantidad] AS [cantidad], 
+    [sdm_v_fac_lin].[precioUnitario] AS [precioUnitario], 
+    [sdm_v_fac_lin].[descuento] AS [descuento], 
+    [sdm_v_fac_lin].[precioTotalSinImpuesto] AS [precioTotalSinImpuesto], 
+    [sdm_v_fac_lin].[codigo] AS [codigo], 
+    [sdm_v_fac_lin].[codigoPorcentaje] AS [codigoPorcentaje], 
+    [sdm_v_fac_lin].[tarifa] AS [tarifa], 
+    [sdm_v_fac_lin].[baseImponible] AS [baseImponible], 
+    [sdm_v_fac_lin].[valor] AS [valor], 
+    [sdm_v_fac_lin].[detAdicionalNombre1] AS [detAdicionalNombre1], 
+    [sdm_v_fac_lin].[detAdicionalValor1] AS [detAdicionalValor1], 
+    [sdm_v_fac_lin].[detAdicionalNombre2] AS [detAdicionalNombre2], 
+    [sdm_v_fac_lin].[detAdicionalValor2] AS [detAdicionalValor2], 
+    [sdm_v_fac_lin].[detAdicionalNombre3] AS [detAdicionalNombre3], 
+    [sdm_v_fac_lin].[detAdicionalValor3] AS [detAdicionalValor3], 
+    [sdm_v_fac_lin].[xnumdoc_id] AS [xnumdoc_id], 
+    [sdm_v_fac_lin].[xtipodoc_id] AS [xtipodoc_id], 
+    [sdm_v_fac_lin].[xseccion_id] AS [xseccion_id], 
+    [sdm_v_fac_lin].[xempresa_id] AS [xempresa_id], 
+    [sdm_v_fac_lin].[xciclo_id] AS [xciclo_id]
+    FROM [imp].[sdm_v_fac_lin] AS [sdm_v_fac_lin]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TALLERERP_A01_DATOSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TALLERERP_A01_DATOSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sdm_v_fac_cab" EntityType="TALLERERP_A01_DATOSModel.sdm_v_fac_cab" />
+          <EntitySet Name="sdm_v_fac_iv" EntityType="TALLERERP_A01_DATOSModel.sdm_v_fac_iv" />
+          <EntitySet Name="sdm_v_fac_lin" EntityType="TALLERERP_A01_DATOSModel.sdm_v_fac_lin" />
+        </EntityContainer>
+        <EntityType Name="sdm_v_fac_cab">
+          <Key>
+            <PropertyRef Name="codDoc" />
+            <PropertyRef Name="obligadoContabilidad" />
+            <PropertyRef Name="unidadTiempo" />
+            <PropertyRef Name="infoAdicionalNombre1" />
+            <PropertyRef Name="infoAdicionalNombre2" />
+            <PropertyRef Name="infoAdicionalNombre3" />
+            <PropertyRef Name="infoAdicionalNombre4" />
+            <PropertyRef Name="infoAdicionalNombre5" />
+            <PropertyRef Name="infoAdicionalNombre6" />
+            <PropertyRef Name="infoAdicionalNombre7" />
+            <PropertyRef Name="infoAdicionalNombre8" />
+            <PropertyRef Name="infoAdicionalNombre9" />
+            <PropertyRef Name="infoAdicionalNombre10" />
+            <PropertyRef Name="infoAdicionalNombre11" />
+            <PropertyRef Name="infoAdicionalNombre12" />
+            <PropertyRef Name="xnumdoc_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xciclo_id" />
+            <PropertyRef Name="preClaveAcceso" />
+          </Key>
+          <Property Name="razonSocial" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="nombreComercial" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ruc" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="codDoc" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="estab" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="ptoEmi" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="secuencial" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="dirMatriz" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="fechaEmision" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="dirEstablecimiento" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="contribuyenteEspecial" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="obligadoContabilidad" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="tipoIdentificacionComprador" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="guiaRemision" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="razonSocialComprador" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+          <Property Name="identificacionComprador" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="direccionComprador" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="totalSinImpuestos" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="totalDescuento" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="propina" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="importeTotal" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="moneda" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="formaPago" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="total" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="plazo" Type="Int16" />
+          <Property Name="unidadTiempo" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="valorRetIva" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="valorRetRenta" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="infoAdicionalNombre1" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor1" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre2" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre3" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre4" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre5" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor5" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre6" Type="String" Nullable="false" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalNombre7" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor7" Type="Int32" />
+          <Property Name="infoAdicionalNombre8" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor8" Type="Int32" />
+          <Property Name="infoAdicionalNombre9" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor9" Type="Int32" />
+          <Property Name="infoAdicionalNombre10" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor10" Type="Int32" />
+          <Property Name="infoAdicionalNombre11" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor11" Type="Int32" />
+          <Property Name="infoAdicionalNombre12" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="infoAdicionalValor12" Type="Int32" />
+          <Property Name="xnumdoc_id" Type="Int32" Nullable="false" />
+          <Property Name="xtipodoc_id" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="xseccion_id" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="xempresa_id" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="xciclo_id" Type="Int16" Nullable="false" />
+          <Property Name="Estado" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="preClaveAcceso" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sdm_v_fac_iv">
+          <Key>
+            <PropertyRef Name="codigo" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xciclo_id" />
+            <PropertyRef Name="xnumdoc_id" />
+          </Key>
+          <Property Name="baseImponible" Type="Decimal" Precision="38" Scale="4" />
+          <Property Name="valor" Type="Decimal" Precision="38" Scale="4" />
+          <Property Name="codigo" Type="Int32" Nullable="false" />
+          <Property Name="codigoPorcentaje" Type="Int32" />
+          <Property Name="descuentoAdicional" Type="Int32" />
+          <Property Name="xempresa_id" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="xseccion_id" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="xtipodoc_id" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="xciclo_id" Type="Int16" Nullable="false" />
+          <Property Name="xnumdoc_id" Type="Int32" Nullable="false" />
+          <Property Name="tarifa" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <EntityType Name="sdm_v_fac_lin">
+          <Key>
+            <PropertyRef Name="detAdicionalNombre1" />
+            <PropertyRef Name="detAdicionalNombre2" />
+            <PropertyRef Name="detAdicionalNombre3" />
+            <PropertyRef Name="xnumdoc_id" />
+            <PropertyRef Name="xtipodoc_id" />
+            <PropertyRef Name="xseccion_id" />
+            <PropertyRef Name="xempresa_id" />
+            <PropertyRef Name="xciclo_id" />
+          </Key>
+          <Property Name="codigoPrincipal" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="codigoAuxiliar" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="descripcion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="cantidad" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="precioUnitario" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="descuento" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="precioTotalSinImpuesto" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="codigo" Type="Int32" />
+          <Property Name="codigoPorcentaje" Type="Int32" />
+          <Property Name="tarifa" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="baseImponible" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="valor" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="detAdicionalNombre1" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="detAdicionalValor1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="detAdicionalNombre2" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="detAdicionalValor2" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="detAdicionalNombre3" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <Property Name="detAdicionalValor3" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="xnumdoc_id" Type="Int32" Nullable="false" />
+          <Property Name="xtipodoc_id" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="xseccion_id" Type="String" Nullable="false" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="xempresa_id" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="xciclo_id" Type="Int16" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TALLERERP_A01_DATOSModelStoreContainer" CdmEntityContainer="TALLERERP_A01_DATOSEntities">
+          <EntitySetMapping Name="sdm_v_fac_cab">
+            <EntityTypeMapping TypeName="TALLERERP_A01_DATOSModel.sdm_v_fac_cab">
+              <MappingFragment StoreEntitySet="sdm_v_fac_cab">
+                <ScalarProperty Name="preClaveAcceso" ColumnName="preClaveAcceso" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="xciclo_id" ColumnName="xciclo_id" />
+                <ScalarProperty Name="xempresa_id" ColumnName="xempresa_id" />
+                <ScalarProperty Name="xseccion_id" ColumnName="xseccion_id" />
+                <ScalarProperty Name="xtipodoc_id" ColumnName="xtipodoc_id" />
+                <ScalarProperty Name="xnumdoc_id" ColumnName="xnumdoc_id" />
+                <ScalarProperty Name="infoAdicionalValor12" ColumnName="infoAdicionalValor12" />
+                <ScalarProperty Name="infoAdicionalNombre12" ColumnName="infoAdicionalNombre12" />
+                <ScalarProperty Name="infoAdicionalValor11" ColumnName="infoAdicionalValor11" />
+                <ScalarProperty Name="infoAdicionalNombre11" ColumnName="infoAdicionalNombre11" />
+                <ScalarProperty Name="infoAdicionalValor10" ColumnName="infoAdicionalValor10" />
+                <ScalarProperty Name="infoAdicionalNombre10" ColumnName="infoAdicionalNombre10" />
+                <ScalarProperty Name="infoAdicionalValor9" ColumnName="infoAdicionalValor9" />
+                <ScalarProperty Name="infoAdicionalNombre9" ColumnName="infoAdicionalNombre9" />
+                <ScalarProperty Name="infoAdicionalValor8" ColumnName="infoAdicionalValor8" />
+                <ScalarProperty Name="infoAdicionalNombre8" ColumnName="infoAdicionalNombre8" />
+                <ScalarProperty Name="infoAdicionalValor7" ColumnName="infoAdicionalValor7" />
+                <ScalarProperty Name="infoAdicionalNombre7" ColumnName="infoAdicionalNombre7" />
+                <ScalarProperty Name="infoAdicionalValor6" ColumnName="infoAdicionalValor6" />
+                <ScalarProperty Name="infoAdicionalNombre6" ColumnName="infoAdicionalNombre6" />
+                <ScalarProperty Name="infoAdicionalValor5" ColumnName="infoAdicionalValor5" />
+                <ScalarProperty Name="infoAdicionalNombre5" ColumnName="infoAdicionalNombre5" />
+                <ScalarProperty Name="infoAdicionalValor4" ColumnName="infoAdicionalValor4" />
+                <ScalarProperty Name="infoAdicionalNombre4" ColumnName="infoAdicionalNombre4" />
+                <ScalarProperty Name="infoAdicionalValor3" ColumnName="infoAdicionalValor3" />
+                <ScalarProperty Name="infoAdicionalNombre3" ColumnName="infoAdicionalNombre3" />
+                <ScalarProperty Name="infoAdicionalValor2" ColumnName="infoAdicionalValor2" />
+                <ScalarProperty Name="infoAdicionalNombre2" ColumnName="infoAdicionalNombre2" />
+                <ScalarProperty Name="infoAdicionalValor1" ColumnName="infoAdicionalValor1" />
+                <ScalarProperty Name="infoAdicionalNombre1" ColumnName="infoAdicionalNombre1" />
+                <ScalarProperty Name="valorRetRenta" ColumnName="valorRetRenta" />
+                <ScalarProperty Name="valorRetIva" ColumnName="valorRetIva" />
+                <ScalarProperty Name="unidadTiempo" ColumnName="unidadTiempo" />
+                <ScalarProperty Name="plazo" ColumnName="plazo" />
+                <ScalarProperty Name="total" ColumnName="total" />
+                <ScalarProperty Name="formaPago" ColumnName="formaPago" />
+                <ScalarProperty Name="moneda" ColumnName="moneda" />
+                <ScalarProperty Name="importeTotal" ColumnName="importeTotal" />
+                <ScalarProperty Name="propina" ColumnName="propina" />
+                <ScalarProperty Name="totalDescuento" ColumnName="totalDescuento" />
+                <ScalarProperty Name="totalSinImpuestos" ColumnName="totalSinImpuestos" />
+                <ScalarProperty Name="direccionComprador" ColumnName="direccionComprador" />
+                <ScalarProperty Name="identificacionComprador" ColumnName="identificacionComprador" />
+                <ScalarProperty Name="razonSocialComprador" ColumnName="razonSocialComprador" />
+                <ScalarProperty Name="guiaRemision" ColumnName="guiaRemision" />
+                <ScalarProperty Name="tipoIdentificacionComprador" ColumnName="tipoIdentificacionComprador" />
+                <ScalarProperty Name="obligadoContabilidad" ColumnName="obligadoContabilidad" />
+                <ScalarProperty Name="contribuyenteEspecial" ColumnName="contribuyenteEspecial" />
+                <ScalarProperty Name="dirEstablecimiento" ColumnName="dirEstablecimiento" />
+                <ScalarProperty Name="fechaEmision" ColumnName="fechaEmision" />
+                <ScalarProperty Name="dirMatriz" ColumnName="dirMatriz" />
+                <ScalarProperty Name="secuencial" ColumnName="secuencial" />
+                <ScalarProperty Name="ptoEmi" ColumnName="ptoEmi" />
+                <ScalarProperty Name="estab" ColumnName="estab" />
+                <ScalarProperty Name="codDoc" ColumnName="codDoc" />
+                <ScalarProperty Name="ruc" ColumnName="ruc" />
+                <ScalarProperty Name="nombreComercial" ColumnName="nombreComercial" />
+                <ScalarProperty Name="razonSocial" ColumnName="razonSocial" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sdm_v_fac_iv">
+            <EntityTypeMapping TypeName="TALLERERP_A01_DATOSModel.sdm_v_fac_iv">
+              <MappingFragment StoreEntitySet="sdm_v_fac_iv">
+                <ScalarProperty Name="tarifa" ColumnName="tarifa" />
+                <ScalarProperty Name="xnumdoc_id" ColumnName="xnumdoc_id" />
+                <ScalarProperty Name="xciclo_id" ColumnName="xciclo_id" />
+                <ScalarProperty Name="xtipodoc_id" ColumnName="xtipodoc_id" />
+                <ScalarProperty Name="xseccion_id" ColumnName="xseccion_id" />
+                <ScalarProperty Name="xempresa_id" ColumnName="xempresa_id" />
+                <ScalarProperty Name="descuentoAdicional" ColumnName="descuentoAdicional" />
+                <ScalarProperty Name="codigoPorcentaje" ColumnName="codigoPorcentaje" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="valor" ColumnName="valor" />
+                <ScalarProperty Name="baseImponible" ColumnName="baseImponible" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sdm_v_fac_lin">
+            <EntityTypeMapping TypeName="TALLERERP_A01_DATOSModel.sdm_v_fac_lin">
+              <MappingFragment StoreEntitySet="sdm_v_fac_lin">
+                <ScalarProperty Name="xciclo_id" ColumnName="xciclo_id" />
+                <ScalarProperty Name="xempresa_id" ColumnName="xempresa_id" />
+                <ScalarProperty Name="xseccion_id" ColumnName="xseccion_id" />
+                <ScalarProperty Name="xtipodoc_id" ColumnName="xtipodoc_id" />
+                <ScalarProperty Name="xnumdoc_id" ColumnName="xnumdoc_id" />
+                <ScalarProperty Name="detAdicionalValor3" ColumnName="detAdicionalValor3" />
+                <ScalarProperty Name="detAdicionalNombre3" ColumnName="detAdicionalNombre3" />
+                <ScalarProperty Name="detAdicionalValor2" ColumnName="detAdicionalValor2" />
+                <ScalarProperty Name="detAdicionalNombre2" ColumnName="detAdicionalNombre2" />
+                <ScalarProperty Name="detAdicionalValor1" ColumnName="detAdicionalValor1" />
+                <ScalarProperty Name="detAdicionalNombre1" ColumnName="detAdicionalNombre1" />
+                <ScalarProperty Name="valor" ColumnName="valor" />
+                <ScalarProperty Name="baseImponible" ColumnName="baseImponible" />
+                <ScalarProperty Name="tarifa" ColumnName="tarifa" />
+                <ScalarProperty Name="codigoPorcentaje" ColumnName="codigoPorcentaje" />
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="precioTotalSinImpuesto" ColumnName="precioTotalSinImpuesto" />
+                <ScalarProperty Name="descuento" ColumnName="descuento" />
+                <ScalarProperty Name="precioUnitario" ColumnName="precioUnitario" />
+                <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+                <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+                <ScalarProperty Name="codigoAuxiliar" ColumnName="codigoAuxiliar" />
+                <ScalarProperty Name="codigoPrincipal" ColumnName="codigoPrincipal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
